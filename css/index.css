@@ -1,0 +1,91 @@
+
+
+p{
+    color:black;
+    font-size:50px;
+    font-style: grey;
+
+}
+.el{
+    font-size: large;
+
+}
+h1{
+    
+    color: blue;
+    font-stretch: ultra-condensed;
+    font-display : grey;
+    font-style:italic
+}
+visitors{
+width:400px;
+margin:0 auto;
+margin-top: 10%;
+}
+del{
+width:400px;
+margin:0 auto;
+margin-top: 10%;
+}
+#main{
+border-radius: 5px;
+background: green;
+cursor:pointer;
+font-size: 25px;
+width:50%;
+height : 25px ;
+padding :0;
+color : Black;
+
+}
+body{
+        background-image:url(images/tof.jpg) ;
+        background-size: cover;
+        margin-left:10cm;
+        margin-right:10cm;
+        margin-top:2cm;
+        margin-bottom:2cm;
+        size: 4cm;
+        max-width: 4%;
+
+
+    }
+    #container{
+        width:400px;
+        margin:0 auto;
+        margin-top:10%;
+    }
+    /* Bordered form */
+    form {
+        width:100%;
+        padding: 30px;
+        border: 1px solid #f1f1f1;
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        background-image: -moz-linear-gradient(red);
+        border: #ccc;
+        max-width: 4%;
+    }
+    /*container*/
+    #container h1{
+        width:38% ;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    
+    /*Full-width inputs{*/
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type=submit]:hover {
+        background-color: white;
+        color: #53af57;
+        border: 1px solid #53af57;
+
+    }
+
