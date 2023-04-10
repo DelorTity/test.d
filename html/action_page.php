@@ -8,25 +8,24 @@ if ($_POST['uname']) {
 try
 {
     //recuperer l'etudiant en question
-    $db = new PDO ('mysql:host=localhost;dbname=istec',$user,$pass);
-    $req=$db->prepare('SELECT * FROM etudiants WHERE id=:un') ;
+    $db = new PDO ('mysql:host=localhost;dbname=istecdatabase',$user,$pass);
+    $req=$db->prepare('SELECT * FROM etudiants WHERE ID=:un') ;
     $req->setFetchMode(PDO::FETCH_ASSOC);
     $req->execute([
         ':un'=>$uname
     ]);
     $etudiant= $req->fetchAll();
-    echo $etudiant[0]['NIVEAU'];
+    echo ("Bienvenu Mr/Mme ".$uname." Vous etes bien au niveau: ".$etudiant[0]['NIVEAU']);
     //inserer cet etudiant dans la table liste du jour
-        $req=$db->prepare('INSERT INTO liste_du_jour SET id=?, nom=?, prenom=?, filiere=?, niveau=?') ;
+        $req=$db->prepare('INSERT INTO liste_du_jour SET nom=?, prenom=?, filiere=?, niveau=?') ;
         $ok= $req->execute([
-            $etudiant[0]['ID'],
             $etudiant[0]['NOM'],
             $etudiant[0]['PRENOM'],
             $etudiant[0]['FILIERE'],
             $etudiant[0]['NIVEAU'],
         ]);
         
-    if($ok==1){
+    if($ok){
         echo("<script>alert('Insertion reussie')</script>");
     }else{
         echo'echec';
