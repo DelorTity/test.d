@@ -15,7 +15,7 @@ $pass = '';
 
 try
 {
-$db = new PDO ('mysql:host=localhost;dbname= delor',$user,$pass);
+$db = new PDO ('mysql:host=localhost;dbname=istecdatabase',$user,$pass);
  foreach ($db->query('SELECT * FROM istec')as $row)
  {
   print_r($row);

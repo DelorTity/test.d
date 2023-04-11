@@ -20,7 +20,7 @@ try
     */
     //inserer ce visiteur dans la table visiteurs
         // Créer une instance de l'objet PDO
-        $db = new PDO("mysql:host=localhost;dbname=istec", "root", "");
+        $db = new PDO("mysql:host=localhost;dbname=istecdatabase", "root", "");
         $req=$db->prepare('INSERT INTO visiteurs SET id=?, nom=?,') ;
         $ok= $req->execute([
             $etudiant[0]['ID'],

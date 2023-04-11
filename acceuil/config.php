@@ -1,3 +1,3 @@
 <?php
-    $pdo = new PDO("mysql:host=localhost;dbname=istecdatabase","root","rootroot");
+    $pdo = new PDO("mysql:host=localhost;dbname=istecdatabase","root","");
 ?>
