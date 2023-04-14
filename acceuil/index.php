@@ -42,7 +42,7 @@
 <body>
 
     <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div id="topbar" class="d-flex align-items-center fixed-top center">
         <div class="container d-flex justify-content-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope"></i> <a href="mailto:njangihost@gmail.com">ngassaemmanuelle@gmail.com</a>
