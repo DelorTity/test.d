@@ -1,0 +1,1 @@
+<h1 class="text-success"> J'ai tout resolver les erreurs. Mais il manque celui du formulaire de contact qui est du a l'absence du fichier: assets/vendor/php-email-form/php-email-form.php</h1>
