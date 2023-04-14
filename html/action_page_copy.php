@@ -15,13 +15,13 @@ try
         ':un'=>$uname
     ]);
     $adminitration= $req->fetchAll();
-    echo ("Bienvenu Mr/Mme ".$uname." bonne journee : ".$adminitration[0]['NOM']);
+    echo ("Bienvenu Mr/Mme ".$adminitration[0]['NOM']." bonne journee : ");
     //inserer cet etudiant dans la table liste du jour
         $req=$db->prepare('INSERT INTO liste_du_jour SET nom=?, prenom=?, matricule=?') ;
         $ok= $req->execute([
-            $etudiant[0]['NOM'],
-            $etudiant[0]['PRENOM'],
-            $etudiant[0]['matricule'],
+            $adminitration[0]['NOM'],
+            $adminitration[0]['PRENOM'],
+            $adminitration[0]['MATRICULE'],
         ]);
         
     if($ok){

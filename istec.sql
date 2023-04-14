@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
   `PRENOM` varchar(225) NOT NULL,
   `FILIERE` varchar(225) NOT NULL,
   `NIVEAU` int(11) NOT NULL,
+  `MATRICULE` varchar(225) NOT NULL,
   `DATE ET HEURE` timestamp NOT NULL,
   `MESSAGE` varchar(225) NOT NULL,
   PRIMARY KEY (`ID`)
@@ -100,6 +101,7 @@ CREATE TABLE IF NOT EXISTS `liste_du_jour` (
   `prenom` varchar(20) CHARACTER SET latin1 NOT NULL,
   `filiere` varchar(20) CHARACTER SET latin1 NOT NULL,
   `niveau` int(11) NOT NULL,
+  `matricule` varchar(225) NOT NULL,
   `date_heure` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;

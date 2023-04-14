@@ -76,8 +76,8 @@
 
             <a href="../html/login-form-15/index.php" class="appointment-btn scrollto"><span
                     class="d-none d-md-inline">Etudiant</span> istec</a>
-            <a href="../html/login-form-15/index copy.php" class="appointment-btn scrollto"><span
-                    class="d-none d-md-inline">Administration</span> istec</a>        
+            <a href="../html/login-form-15/index_copy.php" class="appointment-btn scrollto"><span
+                    class="d-none d-md-inline">Administration</span> istec</a>
             <a href="../html/login-form-15/login.php" class="appointment-btn scrollto"><span
                     class="d-none d-md-inline">Administreur</span> istec</a>
 
@@ -170,13 +170,15 @@
                         <div class="icon-box">
                             <div class="icon"><i class="ri-user-3-fill"></i></div>
                             <h4 class="title"><a href="">l'etudiant</a></h4>
-                            <p class="description">enregistre sont heure d'arriver et heure de sortie authomatiquement</p>
+                            <p class="description">enregistre sont heure d'arriver et heure de sortie authomatiquement
+                            </p>
                         </div>
 
                         <div class="icon-box">
                             <div class="icon"><i class="ri-user-3-fill"></i></div>
                             <h4 class="title"><a href="">Administration</a></h4>
-                            <p class="description">enregistre sont heure d'arriver et heure de sortie authomatiquement</p>
+                            <p class="description">enregistre sont heure d'arriver et heure de sortie authomatiquement
+                            </p>
                         </div>
 
                         <div class="icon-box">
